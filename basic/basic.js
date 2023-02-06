@@ -1,5 +1,5 @@
 let exAr = [1,7,-3,9];
-let highestNum = exAr[0];
+let highestNum = exAr[0]; //that way we always compare against a number of the array
 for (let number of exAr) {
     if (number > highestNum) highestNum = number;
 }
@@ -11,7 +11,7 @@ temperature();
 function temperature(){
     let randomTemp = getRandomIntInclusive(-5,25);
     console.log(randomTemp);
-    if (!randomTemp && randomTemp != 0) {
+    if (!randomTemp && randomTemp != 0) {    
         console.log("Temperature sensor offline.");  //null and undefined check. Should not be needed here, just added it as exercise
     }
     else if (randomTemp <= 10) {

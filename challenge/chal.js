@@ -5,7 +5,7 @@ let stName = prompt("Enter Name");
 
 let output = (function(){
     let index = students.indexOf(stName);
-    if (index != undefined) {
+    if (index != undefined || index < 0) {  //to make sure we actually have a value here. 
         return `${students[index]} has reached ` + getGrade(mathGrades[index]) + ` points in Math this season.`;
     }}());
 
